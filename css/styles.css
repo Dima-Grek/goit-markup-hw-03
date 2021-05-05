@@ -14,7 +14,7 @@
     --page-tex-for-images: font-size: 16px, font-style: regular;
     --card-set-gap: 30px;
     --btn-link: 50px;
-    --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .body {
@@ -33,6 +33,11 @@
 
 .section {
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-three {
+    padding-top: 0;
     padding-bottom: 94px;
 }
 
@@ -380,7 +385,9 @@ p {
 .title-team {
     max-width: 270px;
     text-align: center;
-    margin-top: var(--card-set-gap);
+    margin-top: var(--card-set-gap) box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    ;
 }
 
 .section-bg {
@@ -412,6 +419,8 @@ p {
 /*подвал*/
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
     height: 252px;
     background-color: var(--dark-bg-color);
 }
@@ -420,8 +429,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
 }
 
 .img {
@@ -464,17 +471,10 @@ p {
     border-bottom: 1px solid #EEEEEE;
     box-sizing: border-box;
     box-shadow: var(--box-shadow);
-}
-
-.card1 {
-    background: #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
-    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .card-content {
-    margin-top: 20px;
-    padding-left: 24px;
     font-weight: bold;
     font-size: 18px;
     line-height: 1.71;
@@ -482,10 +482,19 @@ p {
     letter-spacing: 0.06em;
 }
 
+.card1 {
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
+.card2 {
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
 .card-text {
     margin-top: 4px;
-    margin-bottom: 20px;
-    padding-left: 24px;
     font-size: var(--page-tex-for-images);
     line-height: 1.6;
     letter-spacing: 0.03em;
@@ -497,4 +506,8 @@ p {
 
 .card-thumb-pf {
     margin-top: 56px;
+}
+
+.card-thumb-text {
+    padding: 20px 24px;
 }
